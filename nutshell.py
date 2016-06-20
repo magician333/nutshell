@@ -14,6 +14,7 @@ if os.path.exists(picture):  # 判断文件是否存在
             open(picture, "rb").read()).decode("utf-8")  # 将其转化为十六进制
     except Exception as e:  # 没有图片
         print("文件无法打开！！！\n")
+        exit()
 else:
     print("文件不存在！！！\n")
     exit()  # 不存在直接退出
